@@ -7,12 +7,11 @@ import { categories } from "../utils/constants";
 
 const Categories = ({ selectedCategory, setSelectedCategory }) => (
   <Stack
-    direction="row"
-    sx={{
-      overflow: "auto",
-      height: { sx: "auto", md: "95%" },
-      flexDirection: { md: "column" },
-    }}
+     direction = "row" 
+            sx = {{ overflowY :"auto" , 
+            height : {sx:"auto" , md:"95%"} ,  
+            color : "red" , 
+            flexDirection : "column"}}
   >
     {categories.map((category) => (
       <button
